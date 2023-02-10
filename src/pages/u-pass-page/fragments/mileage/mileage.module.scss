@@ -1,0 +1,94 @@
+@import "../../../../variables.scss";
+.wrapper {
+  width: 100vw;
+  height: 500px;
+  background: url("../../../../assets/images/mileage-background.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .mileage-container {
+    max-width: 1180px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .mileage-header {
+      width: 100%;
+      height: 99px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "GongGothicMedium";
+      color: white;
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 29px;
+        p {
+          font-size: 24px;
+          opacity: 0.8;
+        }
+      }
+      .description {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .font-orange {
+          color: $orange;
+        }
+        h2 {
+          font-size: 40px;
+          opacity: 0.8;
+          font-weight: 500;
+        }
+      }
+    }
+    .mileage-contents {
+      margin-top: 38px;
+      width: 782px;
+      height: 206px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .right-arrow {
+        font-size: 30px;
+        color: #fff;
+      }
+      .mileage-item {
+        width: 206px;
+        height: 206px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        font-family: "GongGothicMedium";
+        border-radius: 50%;
+        .item-numbering {
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          background-color: rgb(101, 63, 218);
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .font-purple {
+          color: rgb(101, 63, 218);
+        }
+        p {
+          font-size: 20px;
+          color: #2a1764;
+        }
+      }
+    }
+  }
+}

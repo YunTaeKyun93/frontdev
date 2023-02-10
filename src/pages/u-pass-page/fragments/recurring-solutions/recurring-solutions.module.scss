@@ -1,0 +1,114 @@
+@import "../../../../variables.scss";
+
+.wrapper {
+  width: 100vw;
+  height: 1963px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+
+  .recurring-solutions-container {
+    max-width: 1180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans KR", sans-serif;
+
+    .recurring-solutions-header {
+      width: 100%;
+      height: 96px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "GongGothicMedium";
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 29px;
+        p {
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+      .description {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .font-orange {
+          color: $orange;
+        }
+        h2 {
+          font-weight: 500;
+
+          font-size: 40px;
+        }
+      }
+    }
+    .recurring-solutions-contents {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 37px;
+
+      .item {
+        width: 580px;
+        height: 493px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 29px;
+        p {
+          margin: 0;
+        }
+        .item-numbering {
+          width: 40px;
+          height: 42px;
+          border-radius: 50%;
+          background-color: $orange;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          font-size: 18px;
+        }
+        .item-title {
+          height: 34px;
+          font-size: 28px;
+          color: #242230;
+          font-weight: 700;
+        }
+        .item-description {
+          height: 58px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-weight: 500;
+          font-size: 18px;
+        }
+        .item-image {
+          position: relative;
+          .img-blinder {
+            top: 0;
+            position: absolute;
+            width: 100%;
+            height: 150px;
+            background-color: #ffffff;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
