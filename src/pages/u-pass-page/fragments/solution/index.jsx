@@ -31,7 +31,7 @@ const Solution = () => {
               </div>
             </div>
             <div className={ss("item")}>
-              <div className={ss("item-numbering")}>1</div>
+              <div className={ss("item-numbering")}>2</div>
               <div className={ss("item-title")}>
                 <span>세분화된 구성</span>
               </div>
@@ -43,7 +43,7 @@ const Solution = () => {
           </div>
           <div className={ss("item-column")}>
             <div className={ss("item")}>
-              <div className={ss("item-numbering")}>1</div>
+              <div className={ss("item-numbering")}>3</div>
               <div className={ss("item-title")}>
                 <span>다양한 자료 활용</span>
               </div>
@@ -55,7 +55,7 @@ const Solution = () => {
               </div>
             </div>
             <div className={ss("item")}>
-              <div className={ss("item-numbering")}>1</div>
+              <div className={ss("item-numbering")}>4</div>
               <div className={ss("item-title")}>
                 <span>문장 암기법</span>
               </div>

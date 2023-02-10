@@ -15,7 +15,7 @@ const Recommendation = () => {
           <div className={ss("description")}>
             <p>
               이런분들께 <span className={ss("font-orange")}>U패스</span>를
-              추천합니다.
+              추천드려요.
             </p>
           </div>
         </div>

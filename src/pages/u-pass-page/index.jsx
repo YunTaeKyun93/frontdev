@@ -12,8 +12,12 @@ import BigDataExperience from "./fragments/big-data-experience/index";
 import RecurringSolutions from "./fragments/recurring-solutions/index";
 import MileageScholarship from "./fragments/mileage-scholarship/index";
 import Price from "./fragments/price/index";
-import UPass from './fragments/u-pass/index';
+import UPass from "./fragments/u-pass/index";
+import useLogic from "./use-logic/inedx";
+
 const UPassPage = () => {
+  const logic = useLogic();
+
   const ss = classNames.bind(styles);
   return (
     <div className={ss("wrapper")}>
@@ -27,7 +31,13 @@ const UPassPage = () => {
       <RecurringSolutions />
       <MileageScholarship />
       <Price />
-      <UPass/>
+      <UPass
+      uPassItems={logic.uPassItems}
+        isUPassCheck={logic.isUPassCheck}
+        setIsUpassCheck={logic.setIsUpassCheck}
+        test={logic.test} setTest={logic.setTest}
+        selectUPassItem={logic.selectUPassItem}
+      />
       <Footer />
     </div>
   );

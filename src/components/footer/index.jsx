@@ -9,7 +9,7 @@ const Footer = () => {
     <div className={ss("wrapper")}>
       <div className={ss("footer-contaienr")}>
         <FooterLogoImg
-          className={ss("logo")}
+          clasName={ss("logo")}
           style={{ width: "233px", height: "38px" }}
         />
         <div className={ss("footer-menu")}>
