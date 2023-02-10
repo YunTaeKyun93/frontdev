@@ -1,0 +1,64 @@
+@import "../../../../variables.scss";
+.wrapper {
+  width: 100vw;
+  height: 727px;
+  background-color: #653fda;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+
+  .u-pass-container {
+    max-width: 1180px;
+    height: 647px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .banner-background {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.1;
+    }
+    .u-pass-header {
+      width: 100%;
+      height: 96px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "GongGothicMedium";
+      color: white;
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 29px;
+        p {
+          font-size: 24px;
+          opacity: 0.8;
+        }
+      }
+      .description {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .font-orange {
+          color: $orange;
+        }
+        h2 {
+          font-size: 40px;
+          opacity: 0.8;
+          font-weight: 500;
+        }
+      }
+    }
+    .u-pass-contents {
+    }
+  }
+}
