@@ -8,28 +8,25 @@ const useLogic = () => {
     { title: "고1 패스=200강", select: false },
   ];
   const [isUPassCheck, setIsUpassCheck] = useState([true, false, false, false]);
-  const [test, setTest] = useState(true);
-  let initialization = [false, false, false, false];
+  console.log(isUPassCheck);
+  const [initialArray, setInitialArray] = useState([true, false, false, false]);
 
-  // useEffect(()=>{
-  //   console.log(isUPassCheck);
-  // },[isUPassCheck])
+  useEffect(() => {
+    setIsUpassCheck(initialArray);
+  }, [initialArray]);
+
   const selectUPassItem = (i) => {
-    console.log("1", initialization);
+    console.log("start");
+    const initialization = [false, false, false, false];
+    // console.log("1", initialization);
     initialization[i] = !initialization[i];
-    if (isUPassCheck[i] == true) {
-      initialization[i] = !initialization[i];
-    }
-    console.log("2", initialization);
-    setIsUpassCheck(...initialization);
-    console.log(isUPassCheck);
+    // console.log("2", initialization);
+    setInitialArray([...initialization]);
   };
   return {
     isUPassCheck,
     setIsUpassCheck,
     uPassItems,
-    test,
-    setTest,
     selectUPassItem,
   };
 };

@@ -5,14 +5,7 @@ import UPassBannerBackgroundImg from "../../../../components/u-pass-banner-backg
 import UPassItemImg from "./../../../../components/u-pass-item-img/index";
 import { HiCheck } from "react-icons/hi";
 
-const UPass = ({
-  isUPassCheck,
-  setIsUpassCheck,
-  uPassItems,
-  test,
-  setTest,
-  selectUPassItem,
-}) => {
+const UPass = ({ isUPassCheck, uPassItems, selectUPassItem }) => {
   const ss = classNames.bind(styles);
   return (
     <div className={ss("wrapper")}>
@@ -85,18 +78,14 @@ const UPass = ({
           <div className={ss("u-pass-select-container")}>
             <div className={ss("best-label")}>BEST</div>
             <div className={ss("u-pass-list")}>
-      
-             {uPassItems.map((item, i) => (
+              {uPassItems.map((item, i) => (
                 <div key={item.title} className={ss("u-pass-item")}>
                   <div
                     className={ss(
                       `${isUPassCheck[i] ? "check-icon" : "none-check"}`
                     )}
                     onClick={() => {
-                      setIsUpassCheck(!isUPassCheck[i]);
-
-                      // setIsUpassCheck(!isUPassCheck[i])
-                      // console.log(isUPassCheck[i]);
+                      selectUPassItem(i);
                     }}
                   >
                     {isUPassCheck[i] ? <HiCheck /> : ""}

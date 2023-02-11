@@ -32,10 +32,8 @@ const UPassPage = () => {
       <MileageScholarship />
       <Price />
       <UPass
-      uPassItems={logic.uPassItems}
+        uPassItems={logic.uPassItems}
         isUPassCheck={logic.isUPassCheck}
-        setIsUpassCheck={logic.setIsUpassCheck}
-        test={logic.test} setTest={logic.setTest}
         selectUPassItem={logic.selectUPassItem}
       />
       <Footer />
